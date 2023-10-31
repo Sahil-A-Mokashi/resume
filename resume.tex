@@ -1,51 +1,95 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
+\usepackage{changepage}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Sahil Mokashi}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{sahilmokashi6.1@gmail.com} \textperiodcentered\ 
+  \phone{(+91) 8971767006} \textperiodcentered\ 
+  \linkedin[sahil-mokashi]{https://www.linkedin.com/in/sahil-mokashi}}
+
+\section{\faGraduationCap\ Profile Summary}
+\textit{Data Engineer} with a strong background in Google Cloud technologies and Python, with a track record of designing, optimizing data pipelines and leveraging Google Cloud services like Google Cloud Storage, BigQuery, Pub/Sub, Dataflow. 
+\begin{itemize}
+  \item <2 year experience working in Data Engineering
+  \item Proficient with working on Cloud Technologies.
+  \item Proficient in Python, SQL and worked with handling data, visualization, and exploratory data analysis.
+  \item Experienced with working on PySpark (GCP - Dataproc) for data processing and ETL.
+  \item Experience with working on most public cloud technologies (GCP / AZURE / AWS) with expertise in GCP.
+  \item 2x Google Cloud certified.
+  \item 1x Azure Cloud certified.
+\end{itemize}
+
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{S.G. Balekundri Institute of Technology}, Belgaum , India}{2018 -- 2022}
+\textit{Bachelors} in Computer Science and Engineering (CSE) \hfill cgpa - 8.05
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+
+\datedsubsection{\textbf{Persistent Systems}, Pune, India}{2022 -- Present}
+
+\begin{adjustwidth}{0.75cm}{0pt} % Indentation of 1cm
+\subsubsection*{\textbf{Software Engineer}}{Jul. 2022 -- Present}
+\role{Data Engineering - Python, GCP, PySpark, SQL, ETL}
+  \item \textbf{POC : Amazon Reviews Analysis(GCP)} - 
+     This project scrapes reviews from amazon for specific options using tools with selenium , Data is processed, analysed and Data is stored in Bigquery with reports. Python-Flask based app that is used to trigger the features.
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Worked on creating pipelines using Apache Beam (DataFlow) for data ingestion to GCS.
+  \item Used cloud functions as triggers for the processing jobs.
+  \item Used PySpark (DataProc) for data processing from GCS bucket.
+  \item Loaded the data into data warehouse (Bigquery) with analysis reports using Dataflow pipelines.
+  \item Worked with airflow dags to schedule the jobs.
+
+\\
+\end{itemize}
+ \item \textbf{WingMate} - 
+     This is a GENAI tool that combines use of muliple generative AI via the use of API's , this adds features like code translations from python to ruby , testcase generation ,database gen , Git automation ,etc. Built on Python , Django and leverages cloud services(AWS).
+\begin{itemize}
+  \item Worked on data processing and ETL using PySpark .
+  \item worked with creating a docker image for the app
+  \item worked with github actions to automate the process of creating the Docker image and deploying the image to ECR repository , and deploying it to AWS Apprunner.
+\end{itemize}
+\\
+ \item \textbf{ETL} - 
+     ETL tasks on cloud using PYTHON.
+\begin{itemize}
+  \item Trained and worked Used beam pipelines , spark jobs  , airflow
+  \item tasks revolving around data engineering(ETL) over cloud
+  \item worked with Python and Sql extensively
+  \item worked on data migrations 
+  \item use of Dataflow, cloud Storage, Dataproc, PySpark composer to accomplish tasks in optimised and efficient way
+
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+
+\subsubsection*{\textbf{Software Engineering Intern}}{Feb. 2022 -- Jul. 2022}
+\role{Python, Java, Spring/SpringBoot}
+\item  
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item worked using core java
+  \item Worked on creating microservices using technologies spring / springboot 
+  \item worked with mysql database, along with rest api's.
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+
+\end{adjustwidth}
+
+\datedsubsection{\textbf{Uilatech}, Belgaum, India}{Sept. 2021 -- Oct. 2021}
+\subsubsection*{\textbf{Intern}}
+\role{Python, Image Processing, OpenCV}
+\textit{Academic internship trained and worked on various machine learning concepts focusing on OpenCv and Image Processing }
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item worked on multiple mini projects for image processing and OpenCv. 
+  \item used pretrained models for for various general purpose classifications.
+  \item used mediapipe for movement detection in varios ML projects. 
 \end{itemize}
 
 % Reference Test
@@ -57,20 +101,46 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+  \item Programming Languages: Python , Java
+  \item Data: PySpark , SQL , Apache Beam , Apache Airflow ,ETL
+  \item Platform: windows
+  \item Cloud : GCP (proficient) ,Azure and AWS 
+  \item Operations: GIT
+  \item other skills beginner: Flask , Django, Rest, spring/springboot.
 \end{itemize}
 
 \section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
+\datedline{\textit{{WINNER} }of Persistent AI Technathon}{Jul. 2023}
+\textit{Secured first place in the AI Hackathon , Built a java/spring based microservice that serves as a common notification platform for mail/sms/push notification. Use of inbuilt java mail sender and AWS (Ses,Sns,Push Notification) services. Successfully able to send mail and sms notifications using Rest API \\ }
+\datedline{Top performer of Interns batch 2022 at Persistent
+}{Jul. 2022}
+\textit{Awarded for being among the top performers of Interns batch
+2022(GEMS FY23) at Persistent Systems.\\}
+
+\datedline{\textit{Winner} of Project Exhibition at S.G.B.I.T 
+}{Mar. 2019}
+\textit{Secured 1st place at project exhibition held in my college(2nd year) for "IOT based Pollution monitoring system". Arduino Uno based Pollution
+(smoke) monitoring system that uses smoke detector to detect
+pollution.It sends the readings to 'thingspeak' which can be accessed via
+internet. This system triggers a sound alarm at the device and the user can monitor the pollution levels via their phone/web.}
+
+\section{\faGraduationCap\ Certifications}
+\begin{itemize}[parsep=0.5ex]
+  \item \datedline{Google Could Certified : Associate Cloud Engineer}
+{Oct. 2022}
+  \item \datedline{Google Could Certified : Professional Data Engineer}
+{Mar. 2023}
+  \item \datedline{Microsoft : Azure Fundamentals AZ-900}
+{Jul. 2022}
+\end{itemize}
+
+
 
 \section{\faInfo\ Miscellaneous}
 \begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+  \item GitHub: https://github.com/Sahil-A-Mokashi
+  \item Languages: English - Fluent, Hindi - Fluent , Kannada - Fluent , Marathi - limited working proficiency
+  \item Leetcode: https://leetcode.com/sahil-mokashi/
 \end{itemize}
 
 %% Reference
